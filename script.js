@@ -14,3 +14,5 @@ $.ajax({
 });
 
 });
+
+//have to add something in order for this to really be linked to the other pages.
