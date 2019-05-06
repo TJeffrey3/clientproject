@@ -2,14 +2,17 @@
 /* global $ */
 
 $("button").click(function(){
-    var value=$(".search").val();
+    var value = $(".search").val();
+    var url = "https://api.soundcloud.com/tracks?client_id=5aa8e389ba4e24b6106af5159ab3e344&q=";
+    var combine = url + value;
 
 $.ajax({
-    url:"https://api.soundcloud.com/tracks?q=beyone&clientid=5aa8e389ba4e24b6106af5159ab3e344",
+    url: combine,
     method:"GET",
     success: function(response) {
-        $(".gallery").html("<img src='"+response[0].title+"'>")
-       
+        console.log(response[0].title);
+        $(".gallery").html("<p>" + response[0].title + "</p>");
+     
     }
 });
 
