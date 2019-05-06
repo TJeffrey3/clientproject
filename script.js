@@ -11,7 +11,7 @@ $.ajax({
     method:"GET",
     success: function(response) {
         console.log(response[0].title);
-        $(".gallery").html("<p>" + response[0].title + "</p>");
+        $(".gallery").html("<a href='"+ response +"'>" + response[0].title + "</a>");
      
     }
 });

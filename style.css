@@ -3,11 +3,19 @@ h1{
 }
 
 .gallery{
-    
+   margin: 5%;
+   
+}
+
+a{
+    font-size: 20px;
 }
 
 body{
-    background-color:#7BB0E4;
+    border-color:black;
+    border-spacing:50px;
+    background-color:#00c400;
+    text-align:center;
 }
 
 .mvp{
