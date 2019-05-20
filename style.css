@@ -12,10 +12,12 @@ a{
 }
 
 body{
-    border-color:black;
+    border:20px solid black;
     border-spacing:50px;
     background-color:#00c400;
     text-align:center;
+    padding:90px ;
+    background: linear-gradient(to top right, #33ccff 0%, #00c400 100%);
 }
 
 .mvp{
