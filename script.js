@@ -14,7 +14,7 @@ $("button").click(function(){
         console.log(response[0].title);
         response.forEach(function(song){
             console.log(song.title);
-             $(".gallery").append("<li><a>" + song.title +" </a></li>");
+             $(".gallery").append("<li><a href ='" + song.title +"'>"+song.title+"</a></li>");
         });
        // $(".gallery").html("<li><a href='"+ response +"'>" + response[0].title + "</a></li>");
      
